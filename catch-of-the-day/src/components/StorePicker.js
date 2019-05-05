@@ -1,5 +1,4 @@
 import React from 'react';
-import { formatPrice } from '../helpers';
 
 class StorePicker extends React.Component {
     render() {
