@@ -38,7 +38,10 @@ class App extends React.Component {
                             <Fish key={key} index={key} details={this.state.fishes[key]} addToOrder={this.addToOrder} />)}
                     </ul>
                 </div>
-                <Order></Order>
+                <Order
+                    fishes={this.state.fishes} 
+                    order={this.state.order}>
+                </Order>
                 <Inventory 
                     addFish={this.addFish} 
                     loadSampleFishes={this.loadSampleFishes}>
